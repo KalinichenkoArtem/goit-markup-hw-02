@@ -135,7 +135,7 @@ a.link-tel {
 
 a.link-map {
   top: 1739px;
-  color: #ffffff;
+  color: hwb(0 100% 0%);
 }
 
 a.link-mail {
