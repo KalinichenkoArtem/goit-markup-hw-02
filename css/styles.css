@@ -27,7 +27,9 @@ body {
 .link-main-list,
 .hero-list,
 .list-footer,
-.section-list {
+.section-list,
+.section-hero-list,
+.list {
   list-style-type: none;
 }
 
@@ -72,7 +74,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  text-align: center;
   letter-spacing: 0.03em;
   border: 0ch;
   cursor: pointer;
@@ -143,4 +144,54 @@ body {
 .link-mail,
 .link-tel {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.section-hero-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.section-hero-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.team-position {
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.hero-main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-main {
+  background: #2f303a;
 }
