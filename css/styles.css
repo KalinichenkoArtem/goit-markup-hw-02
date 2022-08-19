@@ -1,26 +1,40 @@
 :root {
   --main-color: #212121;
+  --secondary-color: #757575;
+  --link-color: #2196f3;
+  --background-color: #2f303a;
+  --white-color: #ffffff;
 }
 
 body {
   font-family: "Roboto";
   color: var(--main-color);
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 .link-header {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
+  line-height: 1.94em;
   color: var(--main-color);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-decoration: none;
+}
+
+.link-header-shadow {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.94em;
+  color: var(--main-color);
+  text-decoration: none;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .span-header,
 .span-footer {
-  color: #2196f3;
+  color: var(--link-color);
   font-size: 26px;
 }
 
@@ -38,33 +52,28 @@ body {
 .link-subsubmain {
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1em;
   letter-spacing: 0.02em;
   top: 32px;
 }
 
 .link-main,
+.link-submain,
 .link-subsubmain {
   color: var(--main-color);
 }
 
-.link-submain,
+.sublink,
 .link {
-  color: #2196f3;
+  color: var(--secondary-color);
 }
 
 .link,
 .sublink {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
+  line-height: 1em;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-
-.sublink {
-  color: #757575;
 }
 
 .hero-mainbtn,
@@ -73,15 +82,15 @@ body {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
+  line-height: 1em;
   border: 0ch;
   cursor: pointer;
 }
 
 .hero-mainbtn {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-color);
+  background-color: var(--link-color);
+  letter-spacing: 0.06em;
 }
 
 .hero-btn {
@@ -95,16 +104,14 @@ body {
 .section-subtitle {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2.37em;
   letter-spacing: 0.06em;
   color: var(--main-color);
 }
 
 .section-text {
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.87em;
+  color: var(--secondary-color);
 }
 
 .section-link {
@@ -112,7 +119,7 @@ body {
 }
 
 .footer {
-  background: #2f303a;
+  background: var(--background-color);
 }
 
 .link-footer {
@@ -120,9 +127,8 @@ body {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  line-height: 1.94em;
+  color: var(--white-color);
 }
 
 .link-map,
@@ -131,9 +137,8 @@ body {
   text-decoration: none;
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.5em;
   letter-spacing: 0.03em;
 }
 
@@ -148,50 +153,61 @@ body {
 
 .section-hero-subtitle {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1em;
   text-transform: uppercase;
   color: var(--main-color);
 }
 
 .section-hero-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.5em;
+  color: var(--secondary-color);
 }
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  letter-spacing: 0.03em;
+  line-height: 2.62em;
   color: var(--main-color);
 }
 
 .team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: 1.19em;
   color: var(--main-color);
 }
 
 .team-position {
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-color);
 }
 
 .hero-main-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 3.75em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .hero-main {
-  background: #2f303a;
+  background: var(--background-color);
+}
+
+.link-main:focus,
+.link-main:hover,
+.link-submain:focus,
+.link-submain:hover,
+.link-subsubmain:hover,
+.link-subsubmain:focus,
+.link:hover,
+.link:focus,
+.sublink:hover,
+.sublink:focus,
+.link-map:hover,
+.link-map:focus,
+.link-tel:focus,
+.link-tel:hover,
+.link-mail:focus,
+.link-mail:hover {
+  color: var(--link-color);
 }
