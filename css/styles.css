@@ -183,7 +183,6 @@ body {
 .link-main:hover,
 .link-submain:focus,
 .link-submain:hover,
-.link-submain:active,
 .link-subsubmain:hover,
 .link-subsubmain:focus,
 .link:hover,
@@ -205,4 +204,8 @@ body {
 .hero-subbtn:focus {
   color: var(--white-color);
   background-color: var(--link-color);
+}
+
+.current {
+  color: var(--link-color);
 }
