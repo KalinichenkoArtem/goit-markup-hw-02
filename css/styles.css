@@ -206,7 +206,3 @@ body {
   color: var(--white-color);
   background-color: var(--link-color);
 }
-
-:current (link-main, link-submain) {
-  color: var(--link-color);
-}
